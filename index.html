@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <h2> PLAY THE GAME MATE!</h2>
+    <h2>POWERED BY NINJA 1301</h2>
+  </header>
+
+  <!-- MAIN GAME CARD -->
+  <div id="wrapper">
+    <h1>Number Guessing Game</h1>
+
+    <p class="desc">
+      Guess a number between <b>1 and 100</b><br>
+      You have <b>10 attempts</b>
+    </p>
+
+    <form class="form">
+      <label for="guessField" id="guess">Enter Guess</label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" id="subt" value="Submit Guess" />
+    </form>
+
+    <div class="resultParas">
+      <p>Previous Guesses: <span class="guesses"></span></p>
+      <p>Guesses Remaining: <span class="lastResult">10</span></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
+<footer class="footer">
+  2026 © Sachin Kumar | AIT | ALL RIGHTS RESERVED
+</footer>
+
+  <script src="guess.js"></script>
+</body>
+</html>
